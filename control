@@ -1,0 +1,10 @@
+Package: systems.shorty.customlockscreenduration
+Name: CustomLockscreenDuration
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Set your lockscreen timeout duration. Modified from https://github.com/Nosskirneh/CustomLockscreenDuration
+Maintainer: WilsontheWolf <tweaks@shorty.systems>
+Author: WilsontheWolf <tweaks@shorty.systems>
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
+Conflicts: se.nosskirneh.customlockscreenduration

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>footerText</key>
+				<string>This controls the duration of the lock screen. Disable the tweak to use stock behaviour.</string>
+			</dict>
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>default</key>
+				<false />
+				<key>defaults</key>
+				<string>systems.shorty.customlockscreendurationprefs</string>
+				<key>key</key>
+				<string>enabled</string>
+				<key>label</key>
+				<string>Enable</string>
+				<key>PostNotification</key>
+				<string>systems.shorty.customlockscreenduration/preferences.changed</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSegmentCell</string>
+				<key>defaults</key>
+				<string>systems.shorty.customlockduration</string>
+				<key>key</key>
+				<string>duration</string>
+				<key>validTitles</key>
+				<array>
+					<string>2</string>
+					<string>7</string>
+					<string>10</string>
+					<string>16</string>
+					<string>20</string>
+					<string>26</string>
+					<string>31</string>
+					<string>∞</string>
+				</array>
+				<key>validValues</key>
+				<array>
+					<string>2</string>
+					<string>1</string>
+					<string>3</string>
+					<string>4</string>
+					<string>5</string>
+					<string>6</string>
+					<string>7</string>
+					<string>0</string>
+				</array>
+				<key>default</key>
+				<string>1</string>
+				<key>PostNotification</key>
+				<string>systems.shorty.customlockscreenduration/preferences.changed</string>
+				<key>defaults</key>
+				<string>systems.shorty.customlockscreendurationprefs</string>
+			</dict>
+
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>footerText</key>
+				<string>Enabling "Differentiate When Charging" causes the duration to use the one listed here, only when the device is plugged in.
+If the enabled switch above is off, the stock behaviour is used.
+				</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSwitchCell</string>
+				<key>default</key>
+				<false />
+				<key>key</key>
+				<string>chargeMode</string>
+				<key>label</key>
+				<string>Differentiate When Charging</string>
+				<key>PostNotification</key>
+				<string>systems.shorty.customlockscreenduration/preferences.changed</string>
+				<key>defaults</key>
+				<string>systems.shorty.customlockscreendurationprefs</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSSegmentCell</string>
+				<key>key</key>
+				<string>chargingDuration</string>
+				<key>validTitles</key>
+				<array>
+					<string>2</string>
+					<string>7</string>
+					<string>10</string>
+					<string>16</string>
+					<string>20</string>
+					<string>26</string>
+					<string>31</string>
+					<string>∞</string>
+				</array>
+				<key>validValues</key>
+				<array>
+					<string>2</string>
+					<string>1</string>
+					<string>3</string>
+					<string>4</string>
+					<string>5</string>
+					<string>6</string>
+					<string>7</string>
+					<string>0</string>
+				</array>
+				<key>default</key>
+				<string>1</string>
+				<key>PostNotification</key>
+				<string>systems.shorty.customlockscreenduration/preferences.changed</string>
+				<key>defaults</key>
+				<string>systems.shorty.customlockscreendurationprefs</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>Custom Lock Screen Duration</string>
+	</dict>
+</plist>
